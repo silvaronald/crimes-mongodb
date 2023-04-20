@@ -279,228 +279,244 @@ db.createCollection("sentencas");
 db.sentencas.insertOne({
   juiza: "Beyoncé",
   prisao: "Alcatraz",
-  criminoso: "José Mourinho",
-  crime: "Homicídio",
-  pena: 120,
-});
-db.sentencas.insertOne({
-  juiza: "Rihanna",
-  prisao: "Ilha de Poveglia",
-  criminoso: "Pep Guardiola",
-  crime: "Assalto à mão armada",
-  pena: 36,
-});
-db.sentencas.insertOne({
-  juiza: "Lady Gaga",
-  prisao: "ADX Florence",
-  criminoso: "Jurgen Klopp",
-  crime: "Sonegação",
-  pena: 24,
-});
-db.sentencas.insertOne({
-  juiza: "Ariana Grande",
-  prisao: "Bang Kwang Central Prison",
-  criminoso: "Zinedine Zidane",
+  criminosos: ["Diego Simeone", "Pep Guardiola"],
   crime: "Roubo",
-  pena: 60,
-});
-db.sentencas.insertOne({
-  juiza: "Katy Perry",
-  prisao: "Black Dolphin Prison",
-  criminoso: "Carlo Ancelotti",
-  crime: "Tráfico de drogas",
-  pena: 96,
-});
-db.sentencas.insertOne({
-  juiza: "Taylor Swift",
-  prisao: "Al-Hadba prison",
-  criminoso: "Diego Simeone",
-  crime: "Furto",
   pena: 12,
 });
 db.sentencas.insertOne({
-  juiza: "Adele",
-  prisao: "La Modelo",
-  criminoso: "Ole Gunnar Solskjær",
-  crime: "Difamação",
+  juiza: "Rihanna",
+  prisao: "ADX Florence",
+  criminosos: ["Julian Nagelsmann", "Zinedine Zidane", "Antonio Conte"],
+  crime: "Assalto à mão armada",
+  pena: 24,
+});
+db.sentencas.insertOne({
+  juiza: "Lady Gaga",
+  prisao: "Carandiru",
+  criminosos: ["Carlo Ancelotti", "Thomas Tuchel"],
+  crime: "Homicídio",
+  pena: 36,
+});
+db.sentencas.insertOne({
+  juiza: "Ariana Grande",
+  prisao: "HMP Belmarsh",
+  criminosos: ["Jurgen Klopp", "Ole Gunnar Solskjær"],
+  crime: "Sonegação",
   pena: 6,
 });
 db.sentencas.insertOne({
-  juiza: "Dua Lipa",
-  prisao: "San Quentin State Prison",
-  criminoso: "Thomas Tuchel",
-  crime: "Fraude",
-  pena: 48,
+  juiza: "Katy Perry",
+  prisao: "La Modelo",
+  criminosos: ["Zinedine Zidane"],
+  crime: "Tráfico de drogas",
+  pena: 18,
 });
 db.sentencas.insertOne({
-  juiza: "Billie Eilish",
-  prisao: "Carandiru",
-  criminoso: "Antonio Conte",
-  crime: "Pichação",
+  juiza: "Taylor Swift",
+  prisao: "Black Dolphin Prison",
+  criminosos: ["Diego Simeone", "Thomas Tuchel", "Pep Guardiola"],
+  crime: "Furto",
+  pena: 9,
+});
+db.sentencas.insertOne({
+  juiza: "Adele",
+  prisao: "San Quentin State Prison",
+  criminosos: ["Carlo Ancelotti"],
+  crime: "Difamação",
   pena: 3,
 });
 db.sentencas.insertOne({
-  juiza: "Shakira",
-  prisao: "HMP Belmarsh",
-  criminoso: "Julian Nagelsmann",
-  crime: "Calúnia",
-  pena: 18,
-});
-db.sentencas.insertOne({
-  juiza: "Rihanna",
-  prisao: "Black Dolphin Prison",
-  criminoso: "Zinedine Zidane",
-  crime: "Homicídio",
-  pena: 60,
-});
-
-db.sentencas.insertOne({
-  juiza: "Ariana Grande",
-  prisao: "Alcatraz",
-  criminoso: "Carlo Ancelotti",
-  crime: "Tráfico de drogas",
-  pena: 120,
-});
-
-db.sentencas.insertOne({
   juiza: "Dua Lipa",
-  prisao: "Bang Kwang Central Prison",
-  criminoso: "Diego Simeone",
-  crime: "Roubo",
-  pena: 36,
-});
-
-db.sentencas.insertOne({
-  juiza: "Katy Perry",
-  prisao: "HMP Belmarsh",
-  criminoso: "Julian Nagelsmann",
-  crime: "Assalto à mão armada",
-  pena: 72,
-});
-
-db.sentencas.insertOne({
-  juiza: "Taylor Swift",
-  prisao: "ADX Florence",
-  criminoso: "Pep Guardiola",
-  crime: "Sonegação",
+  prisao: "Ilha de Poveglia",
+  criminosos: ["Antonio Conte", "Julian Nagelsmann"],
+  crime: "Fraude",
   pena: 48,
 });
-
+db.sentencas.insertOne({
+  juiza: "Billie Eilish",
+  prisao: "Bang Kwang Central Prison",
+  criminosos: ["Zinedine Zidane", "Jurgen Klopp"],
+  crime: "Pichação",
+  pena: 6,
+});
 db.sentencas.insertOne({
   juiza: "Shakira",
-  prisao: "San Quentin State Prison",
-  criminoso: "Antonio Conte",
-  crime: "Difamação",
+  prisao: "Al-Hadba prison",
+  criminosos: ["Ole Gunnar Solskjær", "Diego Simeone"],
+  crime: "Calúnia",
+  pena: 12,
+});
+db.sentencas.insertOne({
+  juiza: "Beyoncé",
+  prisao: "Alcatraz",
+  criminosos: ["Zinedine Zidane", "Diego Simeone"],
+  crime: "Homicídio",
   pena: 24,
 });
 
 db.sentencas.insertOne({
-  juiza: "Billie Eilish",
-  prisao: "Ilha de Poveglia",
-  criminoso: "Ole Gunnar Solskjær",
+  juiza: "Rihanna",
+  prisao: "ADX Florence",
+  criminosos: ["Pep Guardiola", "Antonio Conte", "Jurgen Klopp"],
+  crime: "Tráfico de drogas",
+  pena: 60,
+});
+
+db.sentencas.insertOne({
+  juiza: "Lady Gaga",
+  prisao: "Bang Kwang Central Prison",
+  criminosos: ["Carlo Ancelotti", "Julian Nagelsmann"],
   crime: "Furto",
   pena: 12,
 });
 
 db.sentencas.insertOne({
-  juiza: "Lady Gaga",
+  juiza: "Ariana Grande",
+  prisao: "Black Dolphin Prison",
+  criminosos: ["Thomas Tuchel", "Ole Gunnar Solskjær"],
+  crime: "Assalto à mão armada",
+  pena: 36,
+});
+
+db.sentencas.insertOne({
+  juiza: "Katy Perry",
+  prisao: "Carandiru",
+  criminosos: ["José Mourinho", "Diego Simeone", "Antonio Conte"],
+  crime: "Difamação",
+  pena: 6,
+});
+
+db.sentencas.insertOne({
+  juiza: "Taylor Swift",
   prisao: "La Modelo",
-  criminoso: "Thomas Tuchel",
-  crime: "Fraude",
-  pena: 96,
+  criminosos: ["Zinedine Zidane", "Julian Nagelsmann"],
+  crime: "Sonegação",
+  pena: 18,
 });
 
 db.sentencas.insertOne({
   juiza: "Adele",
-  prisao: "Carandiru",
-  criminoso: "José Mourinho",
-  crime: "Pichação",
-  pena: 6,
-});
-
-db.sentencas.insertOne({
-  juiza: "Beyoncé",
-  prisao: "Al-Hadba prison",
-  criminoso: "Jurgen Klopp",
-  crime: "Calúnia",
-  pena: 18,
-});
-db.sentencas.insertOne({
-  juiza: "Taylor Swift",
-  prisao: "ADX Florence",
-  criminoso: "Antonio Conte",
+  prisao: "Ilha de Poveglia",
+  criminosos: ["Pep Guardiola"],
   crime: "Fraude",
-  pena: 36,
+  pena: 9,
 });
 
 db.sentencas.insertOne({
   juiza: "Dua Lipa",
-  prisao: "Black Dolphin Prison",
-  criminoso: "Pep Guardiola",
-  crime: "Tráfico de drogas",
-  pena: 48,
-});
-
-db.sentencas.insertOne({
-  juiza: "Shakira",
-  prisao: "Ilha de Poveglia",
-  criminoso: "Julian Nagelsmann",
-  crime: "Homicídio",
-  pena: 60,
-});
-
-db.sentencas.insertOne({
-  juiza: "Beyoncé",
-  prisao: "La Modelo",
-  criminoso: "Diego Simeone",
-  crime: "Assalto à mão armada",
-  pena: 72,
-});
-
-db.sentencas.insertOne({
-  juiza: "Katy Perry",
-  prisao: "Alcatraz",
-  criminoso: "Carlo Ancelotti",
-  crime: "Sonegação",
-  pena: 24,
-});
-
-db.sentencas.insertOne({
-  juiza: "Ariana Grande",
-  prisao: "HMP Belmarsh",
-  criminoso: "Zinedine Zidane",
-  crime: "Difamação",
-  pena: 12,
-});
-
-db.sentencas.insertOne({
-  juiza: "Rihanna",
-  prisao: "San Quentin State Prison",
-  criminoso: "Ole Gunnar Solskjær",
-  crime: "Roubo",
-  pena: 84,
-});
-
-db.sentencas.insertOne({
-  juiza: "Lady Gaga",
   prisao: "Al-Hadba prison",
-  criminoso: "José Mourinho",
-  crime: "Calúnia",
+  criminosos: ["Jurgen Klopp", "Carlo Ancelotti"],
+  crime: "Pichação",
   pena: 6,
 });
 
 db.sentencas.insertOne({
   juiza: "Billie Eilish",
-  prisao: "Carandiru",
-  criminoso: "Jurgen Klopp",
-  crime: "Pichação",
-  pena: 18,
+  prisao: "San Quentin State Prison",
+  criminosos: ["Thomas Tuchel", "Ole Gunnar Solskjær", "Diego Simeone"],
+  crime: "Calúnia",
+  pena: 15,
+});
+
+db.sentencas.insertOne({
+  juiza: "Shakira",
+  prisao: "HMP Belmarsh",
+  criminosos: [
+    "Antonio Conte",
+    "Julian Nagelsmann",
+    "José Mourinho",
+    "Pep Guardiola",
+  ],
+  crime: "Roubo",
+  pena: 30,
+});
+
+db.sentencas.insertOne({
+  juiza: "Rihanna",
+  prisao: "ADX Florence",
+  criminosos: ["Diego Simeone", "Zinedine Zidane"],
+  crime: "Assalto à mão armada",
+  pena: 36,
+});
+
+db.sentencas.insertOne({
+  juiza: "Taylor Swift",
+  prisao: "Alcatraz",
+  criminosos: ["Pep Guardiola", "Thomas Tuchel", "Antonio Conte"],
+  crime: "Roubo",
+  pena: 12,
 });
 
 db.sentencas.insertOne({
   juiza: "Dua Lipa",
-  prisao: "Bang Kwang Central Prison",
-  criminoso: "Thomas Tuchel",
-  crime: "Furto",
+  prisao: "La Modelo",
+  criminosos: ["Julian Nagelsmann", "Carlo Ancelotti", "José Mourinho"],
+  crime: "Fraude",
+  pena: 24,
+});
+
+db.sentencas.insertOne({
+  juiza: "Shakira",
+  prisao: "Black Dolphin Prison",
+  criminosos: ["Jurgen Klopp"],
+  crime: "Homicídio",
   pena: 48,
+});
+
+db.sentencas.insertOne({
+  juiza: "Katy Perry",
+  prisao: "Bang Kwang Central Prison",
+  criminosos: ["Ole Gunnar Solskjær"],
+  crime: "Tráfico de drogas",
+  pena: 6,
+});
+
+db.sentencas.insertOne({
+  juiza: "Billie Eilish",
+  prisao: "San Quentin State Prison",
+  criminosos: ["Diego Simeone", "Zinedine Zidane", "Carlo Ancelotti"],
+  crime: "Assalto à mão armada",
+  pena: 60,
+});
+
+db.sentencas.insertOne({
+  juiza: "Adele",
+  prisao: "HMP Belmarsh",
+  criminosos: ["Antonio Conte", "Pep Guardiola"],
+  crime: "Furto",
+  pena: 18,
+});
+
+db.sentencas.insertOne({
+  juiza: "Lady Gaga",
+  prisao: "Al-Hadba prison",
+  criminosos: ["Jurgen Klopp", "Thomas Tuchel"],
+  crime: "Difamação",
+  pena: 3,
+});
+
+db.sentencas.insertOne({
+  juiza: "Beyoncé",
+  prisao: "Carandiru",
+  criminosos: [
+    "José Mourinho",
+    "Julian Nagelsmann",
+    "Diego Simeone",
+    "Zinedine Zidane",
+  ],
+  crime: "Sonegação",
+  pena: 72,
+});
+
+db.sentencas.insertOne({
+  juiza: "Ariana Grande",
+  prisao: "Ilha de Poveglia",
+  criminosos: [
+    "Antonio Conte",
+    "Pep Guardiola",
+    "Thomas Tuchel",
+    "Jurgen Klopp",
+  ],
+  crime: "Calúnia",
+  pena: 9,
 });
