@@ -80,6 +80,69 @@ db.juizas.aggregate( [
     }
  ] )
 
+//Retorna todas as sentencas com o campo "juiza" preenchido por todas as informaçãoes da juíza
+db.sentencas.aggregate([
+  {
+    $lookup: {
+      from: "juizas",
+      localField: "juiza",
+      foreignField: "nome",
+      as: "juiza"
+    }
+  }
+]);
+
+//Descobrimos agora que Pep Guardiola liderou todos os crimes de pichação na cidade
+//Insere o nome do criminoso na lista de criminosos de cada setença de um crime de pichação
+db.sentencas.updateMany(
+  { crime: "Pichação" },
+  { $addToSet: { criminosos: "Pep Guardiola" } }
+);
+
+
+//Cria a collection "crime_count" que conta o número de sentenças (value) para cada tipo de crime (_id)
+var mapFunction = function() {
+  emit(this.crime, 1);
+};
+var reduceFunction = function(key, values) {
+  return Array.sum(values);
+};
+db.sentencas.mapReduce(
+  mapFunction,
+  reduceFunction,
+  {
+    out: "crime_count"
+  }
+)
+
+
+//Retorna as setenças nos quais o crime cometido é o furto e a lista de criminosos envolvidos expõe apenas o nome de Diego Simeone, se ele estiver envolvido
+db.sentencas.aggregate([
+  {
+    $match: {
+      crime: "Furto"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      juiza: 1,
+      pena: 1,
+      criminosos: {
+        $filter: {
+          input: "$criminosos",
+          as: "criminoso",
+          cond: { $eq: [ "$$criminoso", "Diego Simeone" ] }
+        }
+      }
+    }
+  }
+])
+
+
+//Adiciona a juíza Bia na collection juízas -> o método save foi removido na versão 5 do mongodb
+db.juizas.save({nome: "Bia", grau_de_competencia: "Alto", grau_de_autoridade: "Alto", nacionalidade: "Brasil"})
+
 // Parece que os rapazes deixaram de ser criminosos e agora são "cidadãos de bem", o que não parece fazer muito sentido
 db.criminosos.renameCollection("cidadaosDeBem")
 
