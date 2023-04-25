@@ -62,25 +62,7 @@ db.sentencas.find({ criminosos: { $all: ["Pep Guardiola", "Jurgen Klopp"] } }).c
 db.crimes.createIndex({ descricao: "text" })
 db.crimes.find({ $text: { $search: "violência" } })
 
-// Acha as sentenças envolvendo sexagenários
-db.sentencas.find({ "criminosos.idade": { $gte: 30 } })
-
-// Retorna apenas as juízas de maior grau de autoridade
-db.juizas.aggregate( [
-    {
-       $project: {
-          grau_de_autoridade: {
-             $filter: {
-                input: "$grau_de_autoridade",
-                as: "autoridade",
-                cond: { $gte: [ "$$item.price", 100 ] }
-             }
-          }
-       }
-    }
- ] )
-
-//Retorna todas as sentencas com o campo "juiza" preenchido por todas as informaçãoes da juíza
+// Retorna todas as sentenças com o campo "juiza" preenchido por todas as informaçãoes da juíza
 db.sentencas.aggregate([
   {
     $lookup: {
@@ -100,7 +82,7 @@ db.sentencas.updateMany(
 );
 
 
-//Cria a collection "crime_count" que conta o número de sentenças (value) para cada tipo de crime (_id)
+// Cria a collection "crime_count" que conta o número de sentenças (value) para cada tipo de crime (_id)
 var mapFunction = function() {
   emit(this.crime, 1);
 };
@@ -115,8 +97,7 @@ db.sentencas.mapReduce(
   }
 )
 
-
-//Retorna as setenças nos quais o crime cometido é o furto e a lista de criminosos envolvidos expõe apenas o nome de Diego Simeone, se ele estiver envolvido
+// Retorna as setenças nos quais o crime cometido é o furto e a lista de criminosos envolvidos expõe apenas o nome de Diego Simeone, se ele estiver envolvido
 db.sentencas.aggregate([
   {
     $match: {
@@ -138,10 +119,6 @@ db.sentencas.aggregate([
     }
   }
 ])
-
-
-//Adiciona a juíza Bia na collection juízas -> o método save foi removido na versão 5 do mongodb
-db.juizas.save({nome: "Bia", grau_de_competencia: "Alto", grau_de_autoridade: "Alto", nacionalidade: "Brasil"})
 
 // Parece que os rapazes deixaram de ser criminosos e agora são "cidadãos de bem", o que não parece fazer muito sentido
 db.criminosos.renameCollection("cidadaosDeBem")
