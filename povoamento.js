@@ -104,7 +104,7 @@ db.crimes.insertOne({
 
 db.crimes.insertOne({
   nome: "Furto",
-  descricao: "Roubo de propriedade sem o uso de violência ou ameaça",
+  descricao: "Roubo despercebido de propriedade sem o uso de violência ou ameaça",
   gravidade: "Leve",
   pena_minima: 12,
 });
@@ -281,49 +281,49 @@ db.sentencas.insertOne({
   prisao: "Alcatraz",
   criminosos: ["Diego Simeone", "Pep Guardiola"],
   crime: "Roubo",
-  pena: 12,
+  pena: 36,
 });
 db.sentencas.insertOne({
   juiza: "Rihanna",
   prisao: "ADX Florence",
   criminosos: ["Julian Nagelsmann", "Zinedine Zidane", "Antonio Conte"],
   crime: "Assalto à mão armada",
-  pena: 24,
+  pena: 241,
 });
 db.sentencas.insertOne({
   juiza: "Lady Gaga",
   prisao: "Carandiru",
   criminosos: ["Carlo Ancelotti", "Thomas Tuchel"],
   crime: "Homicídio",
-  pena: 36,
+  pena: 360,
 });
 db.sentencas.insertOne({
   juiza: "Ariana Grande",
   prisao: "HMP Belmarsh",
   criminosos: ["Jurgen Klopp", "Ole Gunnar Solskjær"],
   crime: "Sonegação",
-  pena: 6,
+  pena: 112,
 });
 db.sentencas.insertOne({
   juiza: "Katy Perry",
   prisao: "La Modelo",
   criminosos: ["Zinedine Zidane"],
   crime: "Tráfico de drogas",
-  pena: 18,
+  pena: 100,
 });
 db.sentencas.insertOne({
   juiza: "Taylor Swift",
   prisao: "Black Dolphin Prison",
   criminosos: ["Diego Simeone", "Thomas Tuchel", "Pep Guardiola"],
   crime: "Furto",
-  pena: 9,
+  pena: 13,
 });
 db.sentencas.insertOne({
   juiza: "Adele",
   prisao: "San Quentin State Prison",
   criminosos: ["Carlo Ancelotti"],
   crime: "Difamação",
-  pena: 3,
+  pena: 7,
 });
 db.sentencas.insertOne({
   juiza: "Dua Lipa",
@@ -351,7 +351,7 @@ db.sentencas.insertOne({
   prisao: "Alcatraz",
   criminosos: ["Zinedine Zidane", "Diego Simeone"],
   crime: "Homicídio",
-  pena: 24,
+  pena: 242,
 });
 
 db.sentencas.insertOne({
@@ -375,7 +375,7 @@ db.sentencas.insertOne({
   prisao: "Black Dolphin Prison",
   criminosos: ["Thomas Tuchel", "Ole Gunnar Solskjær"],
   crime: "Assalto à mão armada",
-  pena: 36,
+  pena: 100,
 });
 
 db.sentencas.insertOne({
@@ -391,7 +391,7 @@ db.sentencas.insertOne({
   prisao: "La Modelo",
   criminosos: ["Zinedine Zidane", "Julian Nagelsmann"],
   crime: "Sonegação",
-  pena: 18,
+  pena: 180,
 });
 
 db.sentencas.insertOne({
@@ -399,7 +399,7 @@ db.sentencas.insertOne({
   prisao: "Ilha de Poveglia",
   criminosos: ["Pep Guardiola"],
   crime: "Fraude",
-  pena: 9,
+  pena: 90,
 });
 
 db.sentencas.insertOne({
@@ -436,7 +436,7 @@ db.sentencas.insertOne({
   prisao: "ADX Florence",
   criminosos: ["Diego Simeone", "Zinedine Zidane"],
   crime: "Assalto à mão armada",
-  pena: 36,
+  pena: 363,
 });
 
 db.sentencas.insertOne({
@@ -444,7 +444,7 @@ db.sentencas.insertOne({
   prisao: "Alcatraz",
   criminosos: ["Pep Guardiola", "Thomas Tuchel", "Antonio Conte"],
   crime: "Roubo",
-  pena: 12,
+  pena: 78,
 });
 
 db.sentencas.insertOne({
@@ -460,7 +460,7 @@ db.sentencas.insertOne({
   prisao: "Black Dolphin Prison",
   criminosos: ["Jurgen Klopp"],
   crime: "Homicídio",
-  pena: 48,
+  pena: 483,
 });
 
 db.sentencas.insertOne({
@@ -468,7 +468,7 @@ db.sentencas.insertOne({
   prisao: "Bang Kwang Central Prison",
   criminosos: ["Ole Gunnar Solskjær"],
   crime: "Tráfico de drogas",
-  pena: 6,
+  pena: 36,
 });
 
 db.sentencas.insertOne({
@@ -476,7 +476,7 @@ db.sentencas.insertOne({
   prisao: "San Quentin State Prison",
   criminosos: ["Diego Simeone", "Zinedine Zidane", "Carlo Ancelotti"],
   crime: "Assalto à mão armada",
-  pena: 60,
+  pena: 65,
 });
 
 db.sentencas.insertOne({
@@ -492,7 +492,7 @@ db.sentencas.insertOne({
   prisao: "Al-Hadba prison",
   criminosos: ["Jurgen Klopp", "Thomas Tuchel"],
   crime: "Difamação",
-  pena: 3,
+  pena: 6,
 });
 
 db.sentencas.insertOne({
@@ -518,5 +518,5 @@ db.sentencas.insertOne({
     "Jurgen Klopp",
   ],
   crime: "Calúnia",
-  pena: 9,
+  pena: 17,
 });
